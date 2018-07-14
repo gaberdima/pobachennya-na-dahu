@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div id="header">
+		<div class="head-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6">
+						<div class="contact-group">
+							<p class="tel-1">093-446-56-76;</p>
+							<p class="tel-2">097-423-23-51</p>
+							<div class="btn btn-primary"  data-toggle="modal" data-target="#myModal-contact">Залишити Заявку</div>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Залишіть заявку і з вами зв’яжуться:</h4>
+									</div>
+									<form id="form" action="" method="post">
+										<div class="modal-body">
+												<input id="name" type="text" name="name" placeholder="Ім'я" required="" ><br>
+												<input id="phone" type="tel" name="tel" placeholder="+380(__)__-__-___" required=""><br>
+												<input id="email" type="email" name="email" placeholder="email">
+										</div>
+										<div class="modal-footer">
+											<input name="" id="send" type="submit" class="btn btn-primary" value="Відправити">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="head-bottom">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->				
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="jpg/logo.png" alt="">
+							<p>Романтичні побачення<br>на даху та вчинки</p>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->				
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#about"><img src="jpg/icon hurt.png" alt=""> Про нас</a>
+							</li>
+							<li class="no-photo">
+								<a href="#media"><img src="jpg/icon hurt.png" alt=""><span> Фото та</span> Відео</a>
+							</li>
+							<li>
+								<a href="#price-service"><img src="jpg/icon hurt.png" alt=""> Послуги та Ціни</a>
+							</li>
+							<li>
+								<a href="#"  class="order"  data-toggle="modal" data-target="#myModal-contact"> <img src="jpg/icon hurt.png" alt=""> Замовити</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->				
+				</div>
+				<!-- /.container-fluid -->				
+			</nav>
+		</div>
+	</div>
+
+	<div id="section-action">
+	<!-- 	<div class="container">
+			<div class="row">
+
+				<div class="eTimer"></div>
+				<div class="timer-section">
+						<script src="http://e-timer.ru/js/etimer.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function() {
+						jQuery(".eTimer").eTimer({
+							etType: 0, etDate: "18.05.2017.6.15", etTitleText: "До окончания акции осталось:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+						});
+					});
+				</script>
+
+			</div>
+			</div>
+		</div> -->
+	</div>
+
+	<div id="section-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-3">
+					<h2 class="about"><a  name="about">Про Нас</a></h2>
+				</div>
+				<div class="col-md-10 col-sm-9">
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="about-inner">
+						<img class="tower" src="jpg/tower.png" alt="">
+						<div class="we">
+							<h2>Ми у Львові</h2>
+							<p>Вас будуть оточувати мальовничі<br> панорами історичного міста Львів. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-inner">
+						<img class="music" src="jpg/music.png" alt="">
+						<div class="we">
+							<h2>Жива музика</h2>
+							<p>Музика на ваш вибір саксофон<br> або скрипка.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-inner">
+						<img class="cake" src="jpg/cake.png" alt="">
+						<div class="we">
+							<h2>Смачна їжа</h2>
+							<p>Широкий вибір страв на ваш<br> вибір.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="section-media">
+		<div class="container">
+			<div class="row">
+				<div class="media-group">
+					<div class="col-md-4 col-sm-5">
+						<h2 class="media"><a  name="media"><span>Фото та </span>Відео</a></h2>
+					</div>
+					<div class="col-md-8 col-sm-7">
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="photo-group">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group-left">
+								<div class="photo">
+									<img src="jpg/1.jpg" alt=""  data-toggle="modal" data-target="#myModal1">
+								</div>
+								<div class="modal fade myModal1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+									  	<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group">
+								<div class="photo">
+									<img src="jpg/2.jpg" alt=""  data-toggle="modal" data-target="#myModal2">
+								</div>
+								<div class="modal fade myModal2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+								  		<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group-left">
+								<div class="photo">
+									<img src="jpg/3.jpg" alt="" data-toggle="modal" data-target="#myModal3">
+								</div>
+								<div class="modal fade myModal3" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+								  		<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group">
+								<div class="photo">
+									<img src="jpg/4.jpg" alt="" data-toggle="modal" data-target="#myModal4">
+								</div>
+								<div class="modal fade myModal4" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+								  		<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group-left">
+								<div class="photo">
+									<img src="jpg/5.jpg" alt="" data-toggle="modal" data-target="#myModal5">
+								</div>
+								<div class="modal fade myModal5" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+								  		<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-group">
+								<div class="photo">
+									<img src="jpg/6.jpg" alt="" data-toggle="modal" data-target="#myModal6">
+								</div>
+								<div class="modal fade myModal6" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog modal-lg">
+								  	<div class="modal-content">
+								  		<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										</div>
+								  		<div class="modal-body"></div>
+								  	</div>
+								  </div>
+								  </div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="col-md-7">
+					<div class="video">
+						<div class="row">
+							<div class="video-inner">
+								<div class="embed-responsive embed-responsive-16by9">
+						 			<iframe width="560" height="315" src="https://www.youtube.com/embed/qd2sZQju-_4" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="video-name">
+								<img src="jpg/icon hurt.png" alt="">
+								<p>Романтичне  освідчення на даху | Львів</p>
+							</div>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="section-price-service">
+		<div class="container">
+			<div class="row">
+				<div class="title-group">
+					<div class="col-md-4 col-sm-5">
+						<h2><a  name="price-service">Послуги та Ціни</a></h2>
+					</div>
+					<div class="col-md-8 col-sm-7">
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="accessories">
+					<p class="bold">Побачення на даху: </p>
+					<p>Дах, стіл, стільці, штучний газон, свічки, бокали, святкове оформлення, вино (глінтвейн, тощо), плед. </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="price-group">
+					<div class="col-md-4 block-price">
+						<div class="">
+							<h2>1 год = 380 грн.</h2>
+						</div>
+					</div>
+					<div class="col-md-4 block-price">
+						<div class="">
+							<h2>1,5 год = 460 грн.</h2>
+						</div>
+					</div>
+					<div class="col-md-4 block-price">
+						<div class="">
+							<h2>+ 1 год = 120 грн.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service-group">
+					<h2 class="service-group-title">Додаткові послуги:</h2>
+					<div class="position">
+						<p class="bold">Фрукти малий набір  </p>
+						<p class="price">60 грн.</p>
+					</div>
+					<div class="position">
+						<p class="bold">Фрукти великий набір</p>
+						<p class="price">90 грн.</p>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">Морозиво</p>
+							<p class="price">30 грн.</p>
+						</div>
+						<span class="small-text">(1 порція) </span>
+					</div>
+					<div class="position">
+						<p class="bold">Чайна церемонія на даху</p>
+						<p class="price">60 грн.</p>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">Домашня кухня</p>
+							<p class="price">договірна</p>
+						</div>
+						<span class="small-text">(рецепт кохання) </span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service-group">
+					<div class="position">
+						<div>
+							<p class="bold">Музика на Ваш вибір</p>
+							<p class="price">60 грн.</p>
+						</div>
+						<span class="small-text">(по запису; тривалість - продовж<br> усього побачення) </span>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">Жива музика</p>
+							<p class="price">договірна</p>
+						</div>
+						<span class="small-text">(саксофон або скрипка) </span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service-group">
+					<div class="position">
+						<p class="bold">Небесний ліхтарик </p>
+						<p class="price">50 грн.</p>
+					</div>
+					<div class="position">
+						<p class="bold">Доріжка з пелюсток троянд</p>
+						<p class="price">130 грн.</p>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">“Килим” з пелюсток троянд</p>
+							<p class="price">90 грн.</p>
+						</div>
+						<span class="small-text">(навколо столу) </span>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">“Полум’яні серця”</p>
+							<p class="price">від 65 грн.</p>
+						</div>
+						<span class="small-text">(доріжка з свічок до місця та<br> малюнок на ваш вибір) </span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="service-group">
+					<div class="position">
+						<div>
+							<p class="bold">Фотозйомка</p>
+							<p class="price">120 грн.</p>
+						</div>
+						<span class="small-text">(тривальсть - 30 хв) </span>
+					</div>
+					<div class="position">
+						<div>
+							<p class="bold">Фотозйомка</p>
+							<p class="price">180 грн.</p>
+						</div>
+						<span class="small-text">(тривальсть - 1 год) </span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="section-order">
+		<div class="container">
+			<div class="row">
+				<div id="trapezoid">
+					<span class="glyphicon glyphicon-chevron-up"></span>
+				</div>
+			</div>
+			<div class="hid">
+				<div class="row">
+					<div class="title-group">
+						<div class="col-md-6 col-sm-6">
+							<h2><a  name="">Зробити замовлення - це легко</a></h2>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="line"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-md-offset-1">
+						<div class="order-block">
+							<div class="picture">
+								<img src="jpg/icon.png" alt="">
+							</div>
+							<p>Ви можете<br> зателефонувати нам<br> або залишити заявку.</p>
+						</div>
+						<img class="arrow1 arrow1-first" src="jpg/arrow.png" alt="">
+						<img class="arrow3" src="jpg/arrow.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<img class="arrow2" src="jpg/arrow2.png" alt="">
+						<div class="order-block">
+							<div class="picture">
+								<img src="jpg/calendar.png" alt="">
+							</div>
+							<p>Виберіть дату та<br> час проведення<br> побачення.</p>
+						</div>
+						<img class="arrow4" src="jpg/arrow2.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<div class="order-block">
+							<div class="picture">
+								<img src="jpg/pig.png" alt="">
+							</div>
+							<p>Внесіть передоплату.</p>
+						</div>
+						<img class="arrow1" src="jpg/arrow.png" alt="">
+						<img class="arrow3" src="jpg/arrow.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<img class="arrow2" src="jpg/arrow2.png" alt="">
+						<div class="order-block">
+							<div class="picture">
+								<img src="jpg/clock.png" alt="">
+							</div>
+							<p>Прийдіть на побачення<br> за декілька хвилин<br> до початку.</p>
+						</div>
+						<img class="arrow4" src="jpg/arrow2.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<div class="order-block">
+							<div class="picture">
+								<img src="jpg/hurt.png" alt="">
+							</div>
+							<p class="bottom-higth">Проведіть незабутній<br> час разом.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-group">
+					<h2>Залишіть заявку і з вами зв’яжуться:</h2>
+					<form id="form" action="" method="post">
+						<input id="name" type="text" name="name" placeholder="Ім'я" required="" ><br>
+						<input id="phone2" type="tel" name="tel" placeholder="+380(__)__-__-___" required="" ><br>
+						<input id="email" type="email" name="email" placeholder="email">
+						<input id="send" name="" type="submit" class="btn btn-primary" value="Відправити">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="section-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="contact">
+						<p>Верстка сайту <a href="https://www.facebook.com/gaberdima" target="_blank">Габер Дмитро</a> +38(093)81-39-915</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phone">
+						<p>093-446-56-76; 097-423-23-51</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="social">
+						<a href="https://vk.com/exculisivedating" target="_blank"><img src="jpg/BK.png" alt=""></a>
+						<a href="https://www.facebook.com/blazhivsky.vitalik?fref=pb&hc_location=friends_tab&pnref=friends.all" target="_blank"><img src="jpg/facebook.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/inputmask.js"></script>
+</body>
+</html>
